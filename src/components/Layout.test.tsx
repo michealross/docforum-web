@@ -100,6 +100,8 @@ describe('Layout — role-aware navigation', () => {
     expect(screen.getByRole('link', { name: 'System' })).toBeInTheDocument();
     expect(desktopNavHrefs()).toEqual([
       '/admin',
+      '/admin/users',
+      '/admin/payments/console',
       '/admin/verifications',
       '/admin/verification',
       '/admin/referrals',

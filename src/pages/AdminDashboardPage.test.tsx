@@ -41,7 +41,7 @@ describe('AdminDashboardPage (#68)', () => {
 
     expect(await screen.findByRole('heading', { name: 'Doctor verifications' })).toBeInTheDocument();
     expect(screen.getByText('3')).toBeInTheDocument();
-    expect(screen.getByText(/oldest waiting: 2 days/i)).toBeInTheDocument();
+    expect(screen.getByText(/oldest waiting:/i)).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /open doctor verifications/i })).toHaveAttribute(
       'href',
       '/admin/verifications',

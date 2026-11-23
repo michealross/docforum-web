@@ -110,6 +110,20 @@ export const BREADCRUMB_ROUTES: BreadcrumbRoute[] = [
     roles: ['patient'],
   },
   {
+    pattern: 'patient/results',
+    label: 'Lab results',
+    messageId: 'breadcrumb.labResults',
+    parent: 'patient',
+    roles: ['patient'],
+  },
+  {
+    pattern: 'patient/results/:resultId',
+    label: 'Lab result',
+    messageId: 'breadcrumb.labResult',
+    parent: 'patient/results',
+    roles: ['patient'],
+  },
+  {
     pattern: 'patient/dependents',
     label: 'Dependents',
     messageId: 'breadcrumb.dependents',
@@ -312,6 +326,27 @@ export const BREADCRUMB_ROUTES: BreadcrumbRoute[] = [
     label: 'Catalogs',
     messageId: 'breadcrumb.catalogs',
     parent: 'admin',
+    roles: ['admin'],
+  },
+  {
+    pattern: 'admin/users',
+    label: 'Users',
+    messageId: 'breadcrumb.users',
+    parent: 'admin',
+    roles: ['admin'],
+  },
+  {
+    pattern: 'admin/payments',
+    label: 'Payments',
+    messageId: 'breadcrumb.payments',
+    parent: 'admin',
+    roles: ['admin'],
+  },
+  {
+    pattern: 'admin/payments/console',
+    label: 'Payments console',
+    messageId: 'breadcrumb.paymentsConsole',
+    parent: 'admin/payments',
     roles: ['admin'],
   },
 ];
